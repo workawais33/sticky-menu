@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        #menu-bar li {
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #about-img{
+            width: 100%;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://www.logodesign.net/images/nature-logo.png" id="logo" alt="">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img id="about-img" src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg   " alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quae error quos architecto dignissimos in modi quod quibusdam veniam consequuntur non, velit quasi recusandae iure eveniet optio praesentium atque repellat sapiente corrupti vitae, debitis hic quas aperiam? Ratione, illum recusandae? Magnam consectetur labore similique exercitationem deserunt sapiente pariatur illum expedita ad? Ullam ipsa expedita facere delectus necessitatibus optio quasi inventore ex magnam quis dolorum illo molestiae assumenda, et, ut atque, doloribus quos numquam velit voluptates modi possimus voluptas id. Sed accusamus alias dignissimos, mollitia consectetur fugit. Vel neque fuga magnam omnis, veniam blanditiis nostrum aliquam tempore porro repudiandae assumenda cum nesciunt soluta voluptatum non laboriosam deserunt quis minus distinctio! Tenetur et quae a optio distinctio dicta laboriosam perspiciatis eaque neque, quisquam sed voluptates ipsa quod quis praesentium, animi quasi ea totam quas amet, rem ad quibusdam eveniet voluptatum. Amet, dolorem. Molestiae, consequuntur ab voluptate sed, nostrum expedita, repellat exercitationem dignissimos veritatis molestias a quam culpa? Totam ex rerum tempora minima optio temporibus dolore. Pariatur dolor quae possimus quaerat temporibus in autem tempore perspiciatis nam error adipisci rerum voluptatem, voluptates esse iusto ea ipsa velit. Iusto exercitationem temporibus totam modi quasi dolorem est reiciendis dignissimos hic debitis beatae repellendus ea, sint explicabo sit impedit ad quaerat non. Quis quasi id numquam explicabo quos cupiditate sint ullam omnis magnam, rerum veniam alias qui! Ea eius voluptate maxime officiis ex, provident exercitationem laudantium nostrum distinctio adipisci saepe architecto laboriosam, quisquam eaque eligendi non rem corrupti delectus animi id soluta. Repellendus quam blanditiis quidem libero rem repellat dolores, facere accusantium iure, dolore fugit animi harum ratione. Explicabo, hic. Dolorem voluptas et praesentium perferendis expedita cumque beatae. Alias consectetur iste, incidunt ut tenetur dolor ea suscipit? Commodi ex tempora, quis, accusamus, laborum quisquam iste modi maiores dignissimos corporis sapiente porro consequuntur. Delectus enim rerum vel odio rem labore eaque facere. Similique accusamus nobis laudantium voluptatibus ipsam obcaecati sapiente! Laborum aliquam temporibus, obcaecati similique voluptas, pariatur illum, quod enim commodi ducimus laudantium vel! Minima aliquid modi excepturi voluptate officia voluptatibus assumenda delectus nihil unde, nemo iusto corporis esse qui voluptates neque iure! Ex sint est quis facilis adipisci suscipit officia repellat, dicta corrupti quibusdam ut fuga iste nisi quia, reiciendis id unde rerum cupiditate architecto odio soluta provident. Corporis aliquid magni hic cum odio unde, aperiam laudantium quia eius nesciunt distinctio nulla possimus porro cumque autem! Eius nam veritatis minima neque reprehenderit nisi tenetur aspernatur atque tempore obcaecati eum rem beatae dicta ea, adipisci, ratione dignissimos quaerat harum porro quod? Molestiae at deserunt dolorem! Expedita accusantium nostrum a quam, provident eligendi quaerat harum eius doloremque at, unde saepe eum fugiat. Officia hic voluptatibus dolor provident, quas amet rerum! Iusto, similique quod hic animi illum quisquam temporibus recusandae, eum magnam voluptatum beatae cum consectetur repellat omnis at voluptatem accusamus maxime mollitia repellendus modi repudiandae, et atque? Enim, cumque, est totam similique pariatur at in quas minus nihil ex, officiis aspernatur. Provident veniam inventore hic numquam repellendus incidunt fugiat enim atque? Omnis repudiandae tempore, quibusdam sit nisi autem.
+        </p>
+    </div>
+    <script>
+        window.addEventListener('scroll', function(){
+            let navbar = document.getElementById("menu-bar");
+
+
+            if(window.pageYOffset >= 190){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
